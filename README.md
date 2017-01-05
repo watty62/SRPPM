@@ -3,7 +3,7 @@ Tracking Scottish Rail Performance
 
 ## Introduction
 
-This project is my first [100 Days of Code](http://github.com/watty/100-days-of-code) project. 
+This project is my first [100 Days of Code](http://github.com/watty62/100-days-of-code) project. 
 
 It is designed to:
 * spot the publication of 4-weekly PDF performance reports, 
@@ -11,9 +11,9 @@ It is designed to:
 * use the PDFTables API to convert to CSV, 
 * extract headline data, and 4 detailed measures for each Scottish Railway station, 
 * write all data to a SQLite database
-* make that publicly available - perhaps via an API
+* make that publicly available - perhaps via an API.
 
-* Requirements
+## Requirements
 
 1. You'll need [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-2. soup) installed 
 3. You'll need an API Key from [PdfTables](https://pdftables.com/pdf-to-excel-api)
