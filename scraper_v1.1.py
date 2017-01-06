@@ -3,6 +3,8 @@ import urllib
 import pdftables_api
 from secrets import pdftables_key
 import csv
+import xml.etree.ElementTree as ET
+import sqlite3
 
 r = urllib.urlopen('https://www.scotrail.co.uk/performance-and-reliability').read()
 soup = BeautifulSoup(r, "html.parser")
@@ -35,12 +37,13 @@ written_name = no_suffix+".csv"
 #work out the year and period from the file name
 no_suffix = file_name.split(".")
 dashes = no_suffix[0].split("-")
-short_years = dashes[2].split("p")[1]
-year = "20"+short_years[0:2]+"-20"+short_years[2:]
+year = dashes[2].split("p")[1]
 period = dashes[3]
-#print ("period", period)
-#print ("year", year) 
 
+# open the downloaded CSV version of the file 
+# run through it extracting the data we need
+# create a nested lists, the inner list with performance data
+# for each individual station 
 
 f = open(written_name)
 csv_f = csv.reader(f)
@@ -130,4 +133,55 @@ for outer in all_stations:
 
 f2.close()
 
-# do a database write here
+# New - in v1.1 - writes the main data out to a SQLite Database
+
+
+conn = sqlite3.connect('train_perf.sqlite')
+cur = conn.cursor()
+
+# Make some fresh tables using executescript()
+# delete or comment out if you have existing data
+# otherwise existing data will be discarded
+
+cur.executescript ('''
+DROP TABLE IF EXISTS Period;
+DROP TABLE IF EXISTS Performance;
+
+
+CREATE TABLE Period (
+    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+    year INTEGER,
+    per_iod INTEGER,
+    start_date TEXT,
+    end_date TEXT
+);
+
+CREATE TABLE Performance (
+    id  INTEGER NOT NULL PRIMARY KEY 
+        AUTOINCREMENT UNIQUE,
+    year INTEGER,
+    period_id  INTEGER,
+    station TEXT  UNIQUE,
+    on_time_t FLOAT, 
+    booked_t INTEGER, 
+    on_time_a FLOAT, 
+    ppm FLOAT
+);
+''')
+# end sections to drop and delete tables
+
+for outer in all_stations:
+    rec_count = 0
+    stn_name = outer[0]
+    ott = outer[1]
+    bt = outer[2]
+    ota = outer [3]
+    ppm = outer [4]
+
+    
+    cur.execute('''INSERT OR REPLACE INTO Performance
+    (year, period_id, station, on_time_t, booked_t, on_time_a, ppm) 
+    VALUES ( ?, ?, ?, ?, ?, ?, ? )''', 
+    ( year, period, stn_name, ott, bt, ota, ppm ) )
+
+conn.commit()
