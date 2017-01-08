@@ -28,10 +28,11 @@ pdftables_key = "xxxxxxxx"
 * The programme invokes the PDFTables API, sending the PDF and gets returned a CSV file which is given the same file name but with the correct CSV suffix. 
 * We then parse the CSV, locating the necessary bits of data, writes these to nested lists, which it the sorts alphabetically by station before (for now) writing these to a plain text file as CSV.
 * We store data in three linked tables in a SQLite database
+* Moved the code which creates or drops the tables if they exist to a function, created a call to the function in the main programme body, so that it can easily be commented out to avoid deleting existing data
 
 ##To be done##
+I need to re-run the code w/c 2017-Jan-08 to see how it performs against a new set of data which it will import. 
 
-Move the code (which creates or drops the tables if they exist) to an external file, and call it from the main programme, so that it can easily be commented out to avoid deleting existing data
 
 ## Optional extras##
 

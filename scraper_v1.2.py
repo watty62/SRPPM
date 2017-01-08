@@ -145,44 +145,49 @@ f2.close()
 conn = sqlite3.connect('train_perf.sqlite')
 cur = conn.cursor()
 
-# Make some fresh tables using executescript()
-# delete or comment out if you have existing data
-# otherwise existing data will be discarded
+# begin function (refresh_db) to make some fresh tables using executescript()
+# USE WITH CAUTION!!  
+# if you have existing data IT WILL BE DESTROYED
 
-cur.executescript ('''
-DROP TABLE IF EXISTS Period;
-DROP TABLE IF EXISTS Performance;
-DROP TABLE IF EXISTS Percentages;
+def refresh_db():
+
+	cur.executescript ('''
+	DROP TABLE IF EXISTS Period;
+	DROP TABLE IF EXISTS Performance;
+	DROP TABLE IF EXISTS Percentages;
 
 
-CREATE TABLE Period (
-    id  INTEGER NOT NULL PRIMARY KEY UNIQUE,
-    year INTEGER,
-    per_iod INTEGER,
-    start_date TEXT,
-    end_date TEXT
-);
+	CREATE TABLE Period (
+	    id  INTEGER NOT NULL PRIMARY KEY UNIQUE,
+	    year INTEGER,
+	    per_iod INTEGER,
+	    start_date TEXT,
+	    end_date TEXT
+	);
 
-CREATE TABLE Percentages (
-	id  INTEGER NOT NULL PRIMARY KEY 
-        AUTOINCREMENT UNIQUE,
-        period_id INTEGER, 
-        monthly_pc FLOAT, 
-        annual_pc FLOAT 
-);
+	CREATE TABLE Percentages (
+		id  INTEGER NOT NULL PRIMARY KEY 
+	        AUTOINCREMENT UNIQUE,
+	        period_id INTEGER, 
+	        monthly_pc FLOAT, 
+	        annual_pc FLOAT 
+	);
 
-CREATE TABLE Performance (
-    id  INTEGER NOT NULL PRIMARY KEY 
-        AUTOINCREMENT UNIQUE,
-    period_id  INTEGER,
-    station TEXT  UNIQUE,
-    on_time_t FLOAT, 
-    booked_t INTEGER, 
-    on_time_a FLOAT, 
-    ppm FLOAT
-);
-''')
-# end sections to drop and delete tables
+	CREATE TABLE Performance (
+	    id  INTEGER NOT NULL PRIMARY KEY 
+	        AUTOINCREMENT UNIQUE,
+	    period_id  INTEGER,
+	    station TEXT  UNIQUE,
+	    on_time_t FLOAT, 
+	    booked_t INTEGER, 
+	    on_time_a FLOAT, 
+	    ppm FLOAT
+	);
+	''')
+	# end function to drop and delete tables
+	###########################################
+
+# refresh_db() # <<== commented out to stop funtion being called. See not at the start of the function
 
 for outer in all_stations:
     rec_count = 0
