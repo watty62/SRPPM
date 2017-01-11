@@ -177,7 +177,7 @@ def refresh_db():
 	    id  INTEGER NOT NULL PRIMARY KEY 
 	        AUTOINCREMENT UNIQUE,
 	    period_id  INTEGER,
-	    station TEXT  UNIQUE,
+	    station TEXT,
 	    on_time_t FLOAT, 
 	    booked_t INTEGER, 
 	    on_time_a FLOAT, 
@@ -187,7 +187,7 @@ def refresh_db():
 	# end function to drop and delete tables
 	###########################################
 
-# refresh_db() # <<== commented out to stop funtion being called. See not at the start of the function
+#refresh_db() # <<== commented out to stop funtion being called. See not at the start of the function
 
 for outer in all_stations:
     rec_count = 0
@@ -203,11 +203,11 @@ for outer in all_stations:
     cur.execute('SELECT id FROM Period WHERE id = ? ', (per_iod, ))
     id = cur.fetchone()[0]
 
-    cur.execute('''INSERT OR REPLACE INTO Performance
+    cur.execute('''INSERT OR IGNORE INTO Performance
     (period_id, station, on_time_t, booked_t, on_time_a, ppm) 
     VALUES ( ?, ?, ?, ?, ?, ? )''', 
     ( id, stn_name, ott, bt, ota, ppm ) )
 
-cur.execute(''' INSERT OR REPLACE INTO Percentages (period_id, monthly_pc, annual_pc)
+cur.execute(''' INSERT OR IGNORE INTO Percentages (period_id, monthly_pc, annual_pc)
     	VALUES (?,?,?)''', (id, monthly_pc, annual_pc))
 conn.commit()
