@@ -1,0 +1,74 @@
+Year, Period, start, end, Location,On_Time_T(%),Booked_T,On_Time_A(%),PPM(%) 
+1617, 10, 11-Dec, 07-Jan, Aberdeen,67.9,34,70.5,86.3 
+1617, 10, 11-Dec, 07-Jan, Airdrie,65.8,38,57.9,89.1 
+1617, 10, 11-Dec, 07-Jan, Alloa,88.8,19,88.8,96.3 
+1617, 10, 11-Dec, 07-Jan, Anniesland,77.5,36,49.2,89.2 
+1617, 10, 11-Dec, 07-Jan, Arbroath,9.8,1,39.3,70.2 
+1617, 10, 11-Dec, 07-Jan, Ardgay,50.5,1,50.5,84.8 
+1617, 10, 11-Dec, 07-Jan, Ardrossan Harbour,15.3,16,15.2,88.8 
+1617, 10, 11-Dec, 07-Jan, Ardrossan South Beach,62.6,1,71.2,95.5 
+1617, 10, 11-Dec, 07-Jan, Ardrossan Town,29.4,3,65.6,94.4 
+1617, 10, 11-Dec, 07-Jan, Ayr,73.3,68,73.9,93.5 
+1617, 10, 11-Dec, 07-Jan, Balloch,44.4,37,44.4,84.6 
+1617, 10, 11-Dec, 07-Jan, Barrhead,71.8,25,55.2,92.9 
+1617, 10, 11-Dec, 07-Jan, Bathgate,51.3,7,47.8,87.9 
+1617, 10, 11-Dec, 07-Jan, Cardenden,77.8,1,60.2,89.1 
+1617, 10, 11-Dec, 07-Jan, Carlisle,51.1,13,55.9,86.5 
+1617, 10, 11-Dec, 07-Jan, Carnoustie,29.0,1,39.5,84.3 
+1617, 10, 11-Dec, 07-Jan, Carstairs,52.7,4,64.0,89.8 
+1617, 10, 11-Dec, 07-Jan, Cowdenbeath,85.1,9,59.0,89.4 
+1617, 10, 11-Dec, 07-Jan, Crianlarich,62.8,2,60.9,79.5 
+1617, 10, 11-Dec, 07-Jan, Cumbernauld,43.2,54,46.4,87.9 
+1617, 10, 11-Dec, 07-Jan, Dalmally,91.6,1,91.6,95.2 
+1617, 10, 11-Dec, 07-Jan, Dalmuir,28.0,73,47.4,86.8 
+1617, 10, 11-Dec, 07-Jan, Dingwall,54.1,1,52.5,80.8 
+1617, 10, 11-Dec, 07-Jan, Dumbarton Central,58.5,36,54.2,88.1 
+1617, 10, 11-Dec, 07-Jan, Dumfries,79.7,4,63.9,88.8 
+1617, 10, 11-Dec, 07-Jan, Dunbar,85.9,5,85.9,95.9 
+1617, 10, 11-Dec, 07-Jan, Dunblane,80.9,41,70.8,90.4 
+1617, 10, 11-Dec, 07-Jan, Dundee,64.4,23,61.4,87.7 
+1617, 10, 11-Dec, 07-Jan, Dyce,78.8,2,52.5,88.1 
+1617, 10, 11-Dec, 07-Jan, East Kilbride,53.4,38,53.4,92.4 
+1617, 10, 11-Dec, 07-Jan, Edinburgh,52.4,337,52.4,86.5 
+1617, 10, 11-Dec, 07-Jan, Elgin,43.3,1,46.9,86.3 
+1617, 10, 11-Dec, 07-Jan, Falkirk Grahamston,57.6,20,69.2,91.0 
+1617, 10, 11-Dec, 07-Jan, Fort William,92.2,1,81.1,90.4 
+1617, 10, 11-Dec, 07-Jan, Garscadden,53.1,5,60.2,90.4 
+1617, 10, 11-Dec, 07-Jan, Girvan,56.8,11,36.7,92.4 
+1617, 10, 11-Dec, 07-Jan, Glasgow Central,53.8,484,53.7,93.0 
+1617, 10, 11-Dec, 07-Jan, Glenrothes,71.2,41,66.7,88.4 
+1617, 10, 11-Dec, 07-Jan, Gourock,52.6,57,52.6,97.2 
+1617, 10, 11-Dec, 07-Jan, Haymarket,53.7,3,63.6,90.4 
+1617, 10, 11-Dec, 07-Jan, Helensburgh Central,52.3,36,52.3,87.6 
+1617, 10, 11-Dec, 07-Jan, Invergordon,61.7,1,43.2,75.8 
+1617, 10, 11-Dec, 07-Jan, Inverness,54.4,36,54.9,77.9 
+1617, 10, 11-Dec, 07-Jan, Inverurie,71.8,11,54.7,86.7 
+1617, 10, 11-Dec, 07-Jan, Irvine,51.2,1,64.0,96.4 
+1617, 10, 11-Dec, 07-Jan, Kilmarnock,72.9,27,67.1,90.3 
+1617, 10, 11-Dec, 07-Jan, Kirkcaldy,66.9,3,58.2,88.5 
+1617, 10, 11-Dec, 07-Jan, Kyle of Lochalsh,49.2,4,49.2,82.9 
+1617, 10, 11-Dec, 07-Jan, Lanark,46.8,38,46.8,89.0 
+1617, 10, 11-Dec, 07-Jan, Largs,36.4,19,36.4,90.0 
+1617, 10, 11-Dec, 07-Jan, Larkhall,47.2,36,47.2,91.1 
+1617, 10, 11-Dec, 07-Jan, Lenzie,43.0,1,72.8,93.9 
+1617, 10, 11-Dec, 07-Jan, Mallaig,81.1,4,81.1,87.6 
+1617, 10, 11-Dec, 07-Jan, Markinch,41.1,1,45.3,68.6 
+1617, 10, 11-Dec, 07-Jan, Milngavie,26.2,64,26.2,76.7 
+1617, 10, 11-Dec, 07-Jan, Motherwell,49.7,43,48.0,89.1 
+1617, 10, 11-Dec, 07-Jan, Neilston,63.3,40,62.9,96.8 
+1617, 10, 11-Dec, 07-Jan, Newton,43.7,39,56.3,93.3 
+1617, 10, 11-Dec, 07-Jan, North Berwick,83.6,19,83.6,95.3 
+1617, 10, 11-Dec, 07-Jan, Oban,67.9,7,67.9,82.6 
+1617, 10, 11-Dec, 07-Jan, Paisley Canal,38.9,35,38.9,97.3 
+1617, 10, 11-Dec, 07-Jan, Partick,66.5,1,40.5,88.2 
+1617, 10, 11-Dec, 07-Jan, Perth,77.8,15,68.2,89.3 
+1617, 10, 11-Dec, 07-Jan, Queen Street,56.2,184,56.1,90.0 
+1617, 10, 11-Dec, 07-Jan, Springburn,32.6,1,56.2,90.7 
+1617, 10, 11-Dec, 07-Jan, Stirling,78.4,11,63.7,90.9 
+1617, 10, 11-Dec, 07-Jan, Stonehaven,55.7,3,55.9,85.8 
+1617, 10, 11-Dec, 07-Jan, Stranraer,80.6,8,80.6,92.3 
+1617, 10, 11-Dec, 07-Jan, Tain,41.4,2,38.8,73.2 
+1617, 10, 11-Dec, 07-Jan, Tweedbank,43.2,33,43.2,85.5 
+1617, 10, 11-Dec, 07-Jan, Wemyss Bay,57.5,19,57.5,95.6 
+1617, 10, 11-Dec, 07-Jan, Whifflet,62.4,16,47.6,89.7 
+1617, 10, 11-Dec, 07-Jan, Wick,28.6,4,28.6,57.5 

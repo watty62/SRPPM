@@ -1,0 +1,74 @@
+Year, Period, start, end, Location,On_Time_T(%),Booked_T,On_Time_A(%),PPM(%) 
+1617, 08, 16-Oct, 12-Nov, Aberdeen,69.4,34,71.7,86.4 
+1617, 08, 16-Oct, 12-Nov, Airdrie,64.9,38,58.2,89.6 
+1617, 08, 16-Oct, 12-Nov, Alloa,87.6,19,87.6,95.7 
+1617, 08, 16-Oct, 12-Nov, Anniesland,76.1,35,49.0,89.1 
+1617, 08, 16-Oct, 12-Nov, Arbroath,9.6,1,40.0,70.7 
+1617, 08, 16-Oct, 12-Nov, Ardgay,51.0,1,51.0,85.1 
+1617, 08, 16-Oct, 12-Nov, Ardrossan Harbour,12.6,16,12.5,87.2 
+1617, 08, 16-Oct, 12-Nov, Ardrossan South Beach,61.6,1,69.9,94.4 
+1617, 08, 16-Oct, 12-Nov, Ardrossan Town,28.1,2,64.0,92.8 
+1617, 08, 16-Oct, 12-Nov, Ayr,72.7,68,73.0,92.9 
+1617, 08, 16-Oct, 12-Nov, Balloch,41.7,37,41.7,83.4 
+1617, 08, 16-Oct, 12-Nov, Barrhead,71.3,25,54.9,92.6 
+1617, 08, 16-Oct, 12-Nov, Bathgate,52.0,7,47.8,88.3 
+1617, 08, 16-Oct, 12-Nov, Cardenden,75.8,1,59.2,88.2 
+1617, 08, 16-Oct, 12-Nov, Carlisle,50.7,13,55.3,84.4 
+1617, 08, 16-Oct, 12-Nov, Carnoustie,28.0,1,40.0,84.2 
+1617, 08, 16-Oct, 12-Nov, Carstairs,52.8,4,63.6,89.1 
+1617, 08, 16-Oct, 12-Nov, Cowdenbeath,84.0,9,58.2,88.8 
+1617, 08, 16-Oct, 12-Nov, Crianlarich,61.8,2,60.0,78.7 
+1617, 08, 16-Oct, 12-Nov, Cumbernauld,42.9,54,46.4,87.7 
+1617, 08, 16-Oct, 12-Nov, Dalmally,92.1,1,92.1,95.6 
+1617, 08, 16-Oct, 12-Nov, Dalmuir,28.2,72,47.7,87.0 
+1617, 08, 16-Oct, 12-Nov, Dingwall,51.8,1,52.4,80.6 
+1617, 08, 16-Oct, 12-Nov, Dumbarton Central,59.9,36,55.1,88.4 
+1617, 08, 16-Oct, 12-Nov, Dumfries,76.0,4,62.1,86.9 
+1617, 08, 16-Oct, 12-Nov, Dunbar,85.4,5,85.4,95.4 
+1617, 08, 16-Oct, 12-Nov, Dunblane,80.8,40,70.6,90.3 
+1617, 08, 16-Oct, 12-Nov, Dundee,64.6,23,61.3,87.3 
+1617, 08, 16-Oct, 12-Nov, Dyce,80.3,2,53.7,88.2 
+1617, 08, 16-Oct, 12-Nov, East Kilbride,54.0,38,54.0,92.6 
+1617, 08, 16-Oct, 12-Nov, Edinburgh,53.9,337,53.8,86.7 
+1617, 08, 16-Oct, 12-Nov, Elgin,43.7,1,48.1,86.4 
+1617, 08, 16-Oct, 12-Nov, Falkirk Grahamston,59.0,20,69.8,91.3 
+1617, 08, 16-Oct, 12-Nov, Fort William,90.1,1,80.7,89.8 
+1617, 08, 16-Oct, 12-Nov, Garscadden,56.9,5,58.1,90.0 
+1617, 08, 16-Oct, 12-Nov, Girvan,51.1,11,34.8,90.9 
+1617, 08, 16-Oct, 12-Nov, Glasgow Central,54.2,483,54.1,92.8 
+1617, 08, 16-Oct, 12-Nov, Glenrothes,70.2,41,65.8,87.6 
+1617, 08, 16-Oct, 12-Nov, Gourock,52.8,57,52.7,96.7 
+1617, 08, 16-Oct, 12-Nov, Haymarket,52.1,3,63.3,90.4 
+1617, 08, 16-Oct, 12-Nov, Helensburgh Central,51.5,36,51.5,87.4 
+1617, 08, 16-Oct, 12-Nov, Invergordon,63.8,1,43.0,75.3 
+1617, 08, 16-Oct, 12-Nov, Inverness,55.0,36,55.6,78.1 
+1617, 08, 16-Oct, 12-Nov, Inverurie,72.8,11,55.2,86.8 
+1617, 08, 16-Oct, 12-Nov, Irvine,48.4,1,63.6,96.1 
+1617, 08, 16-Oct, 12-Nov, Kilmarnock,72.8,27,67.0,89.5 
+1617, 08, 16-Oct, 12-Nov, Kirkcaldy,66.0,3,57.7,87.9 
+1617, 08, 16-Oct, 12-Nov, Kyle of Lochalsh,48.6,4,48.6,82.6 
+1617, 08, 16-Oct, 12-Nov, Lanark,47.2,37,47.2,88.7 
+1617, 08, 16-Oct, 12-Nov, Largs,36.7,19,36.7,88.9 
+1617, 08, 16-Oct, 12-Nov, Larkhall,46.6,35,46.6,90.3 
+1617, 08, 16-Oct, 12-Nov, Lenzie,42.8,1,72.2,93.9 
+1617, 08, 16-Oct, 12-Nov, Mallaig,80.4,4,80.4,87.5 
+1617, 08, 16-Oct, 12-Nov, Markinch,38.7,1,45.5,68.5 
+1617, 08, 16-Oct, 12-Nov, Milngavie,26.2,63,26.2,77.3 
+1617, 08, 16-Oct, 12-Nov, Motherwell,49.6,42,47.8,88.8 
+1617, 08, 16-Oct, 12-Nov, Neilston,63.9,40,63.6,97.0 
+1617, 08, 16-Oct, 12-Nov, Newton,44.9,38,55.8,93.3 
+1617, 08, 16-Oct, 12-Nov, North Berwick,83.6,19,83.6,94.8 
+1617, 08, 16-Oct, 12-Nov, Oban,66.2,7,66.2,81.6 
+1617, 08, 16-Oct, 12-Nov, Paisley Canal,38.7,35,38.7,97.1 
+1617, 08, 16-Oct, 12-Nov, Partick,68.5,3,40.3,88.5 
+1617, 08, 16-Oct, 12-Nov, Perth,77.7,15,68.3,89.1 
+1617, 08, 16-Oct, 12-Nov, Queen Street,55.9,184,55.8,90.0 
+1617, 08, 16-Oct, 12-Nov, Springburn,31.1,1,55.0,90.9 
+1617, 08, 16-Oct, 12-Nov, Stirling,77.3,11,62.3,90.7 
+1617, 08, 16-Oct, 12-Nov, Stonehaven,56.3,3,57.0,85.8 
+1617, 08, 16-Oct, 12-Nov, Stranraer,79.1,8,79.1,92.0 
+1617, 08, 16-Oct, 12-Nov, Tain,42.5,1,38.3,72.6 
+1617, 08, 16-Oct, 12-Nov, Tweedbank,43.4,33,43.4,85.2 
+1617, 08, 16-Oct, 12-Nov, Wemyss Bay,57.9,19,57.9,95.3 
+1617, 08, 16-Oct, 12-Nov, Whifflet,61.5,16,46.8,89.3 
+1617, 08, 16-Oct, 12-Nov, Wick,25.2,4,25.2,53.8 
