@@ -47,9 +47,9 @@ else:
 	 print "File name mismatch"
 
 year = dashes[2].split("p")[1]
-print year
+
 period = dashes[3]
-print period
+
 # open the downloaded CSV version of the file 
 # run through it extracting the data we need
 # create a nested lists, the inner list with performance data
@@ -114,9 +114,9 @@ for line in csv_f:
 		if pattern == 0:
 			if count_line > 18 and count_line < 55:
 				for x in [0, 2, 3, 4, 5]:
-					#print "x=",x
+					
 					if x in [2,4,5]:
-						#print float(line[x][0:len(line[x])-1])
+						
 						one_station.append(float(line[x][0:len(line[x])-1]))
 					elif x == 0:
 

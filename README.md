@@ -5,13 +5,13 @@ Tracking Scottish Rail Performance
 
 This project is my first [100 Days of Code](http://github.com/watty62/100-days-of-code) project. 
 
-It is designed to:
-* spot the publication of 4-weekly PDF performance reports, 
+It is designed to (and mostly does) the following:
+* spot the publication of 4-weekly PDF performance reports (it still doesn't - being run manually)
 * download new ones, 
 * use the PDFTables API to convert to CSV, 
 * extract headline data, and 4 detailed measures for each Scottish Railway station, 
 * write all data to a SQLite database
-* make that publicly available - perhaps via an API.
+* make that publicly available.
 
 ## Requirements##
 
@@ -24,15 +24,12 @@ pdftables_key = "xxxxxxxx"
 ##Progress so far##
 
 * Given the starting URL, the scraper finds the link to the current performance report in PDF.
-* The programme notes the file name (as it contains info on the year and period which we use later) and downloads a copy. 
+* The programme notes the file name (as it contains info on the year and period which we use later) and downloads a copy. Update as of scraperv1.4 - it now deals with shifting naming patterns which appeared in p10 of 2016-17.
 * The programme invokes the PDFTables API, sending the PDF and gets returned a CSV file which is given the same file name but with the correct CSV suffix. 
-* We then parse the CSV, locating the necessary bits of data, writes these to nested lists, which it the sorts alphabetically by station before (for now) writing these to a plain text file as CSV.
-* We store data in three linked tables in a SQLite database
-* Moved the code which creates or drops the tables if they exist to a function, created a call to the function in the main programme body, so that it can easily be commented out to avoid deleting existing data
-
-##To be done##
-I need to re-run the code w/c 2017-Jan-08 to see how it performs against a new set of data which it will import. 
-
+* We then parse the CSV, locating the necessary bits of data, writes these to nested lists, which it the sorts alphabetically by station before writing these to a plain text file as CSV. This is useful for those who cannot use the SQLite database.
+* It stores the data in three linked tables in a SQLite database
+* I've moved the code which creates or drops the tables if they exist to a function, created a call to the function in the main programme body, so that it can easily be commented out to avoid deleting existing data.
+* I've now recoded the main extraction process to work on tables with an extra blank column which appeared in P9 and P10 or 2016-17.
 
 ## Optional extras##
 
