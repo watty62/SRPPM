@@ -26,19 +26,19 @@ for link in links:
 		atpos = len(url_chunks)
 		file_name = url_chunks[atpos - 1:][0]
 		no_suffix = file_name.split(".")[0]
-		print no_suffix
+		
 #uncomment the following line to download the file
 urllib.urlretrieve (target, file_name)
 
 #uncomment the next two lines to send the file for conversion
-#c = pdftables_api.Client(pdftables_key)
-#c.csv(file_name, no_suffix + ".csv") # Note: change each 'csv' to 'xslx' or 'xml' as wanted
+c = pdftables_api.Client(pdftables_key)
+c.csv(file_name, no_suffix + ".csv") # Note: change each 'csv' to 'xslx' or 'xml' as wanted
 
 written_name = no_suffix+".csv"
 
 #work out the year and period from the file name
 #no_suffix = file_name.split(".")
-
+#code below changes in v1.4 as Scotrail changes the file naming from dashes to underscores
 if "-" in no_suffix:
 	dashes = no_suffix.split("-")
 elif "_" in no_suffix:
